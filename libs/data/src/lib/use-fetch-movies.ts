@@ -12,6 +12,9 @@ export function useFetchMovies() {
         const response = await fetch(
           'https://jsonplaceholder.typicode.com/todos'
         ); // Replace with your actual API endpoint
+
+        console.log('👀 ~ fetchMovies ~ fetchMovies:', response);
+
         if (!response.ok) {
           throw new Error('Failed to fetch movies');
         }
